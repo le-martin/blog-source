@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+#googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -75,7 +75,7 @@ params:
 
   socialIcons:
     - name: email
-      url: "martin.le@tu-braunschweig.de"
+      email: "mailto:martin.le@tu-braunschweig.de"
     - name: github
       url: "https://github.com/le-martin/"
     - name: gitlab
