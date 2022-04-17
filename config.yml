@@ -77,8 +77,6 @@ params:
     Content: Research, tipps and tricks ;)
 
   socialIcons:
-    - name: email
-      url: "mailto:martin.le@tu-braunschweig.de"
     - name: github
       url: "https://github.com/le-martin/"
     - name: gitlab
