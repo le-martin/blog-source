@@ -23,11 +23,14 @@ params:
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  # defaultTheme: light
+  defaultTheme: dark
+  # defaultTheme: auto # to switch between dark or light according to browser theme
+
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  # ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -50,7 +53,7 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    #icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
@@ -70,29 +73,29 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Hi there \U0001F44B. This is my first try of creating a blog via GitHub pages and Hugo."
+    Content: Research, tipps and tricks ;)
 
   socialIcons:
     - name: email
-      email: "mailto:martin.le@tu-braunschweig.de"
+      url: "mailto:martin.le@tu-braunschweig.de"
     - name: github
       url: "https://github.com/le-martin/"
     - name: gitlab
       url: "https://gitlab.com/le-martin/"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  #analytics:
+  #  google:
+  #    SiteVerificationTag: "XYZabc"
+  #  bing:
+  #    SiteVerificationTag: "XYZabc"
+  #  yandex:
+  #    SiteVerificationTag: "XYZabc"
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+  #cover:
+  #  hidden: true # hide everywhere but not in structured data
+  #  hiddenInList: true # hide on list pages and home
+  #  hiddenInSingle: true # hide on single page
 
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
@@ -101,28 +104,34 @@ params:
 
   # for search
   # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+  #fuseOpts:
+  #  isCaseSensitive: false
+  #  shouldSort: true
+  #  location: 0
+  #  distance: 1000
+  #  threshold: 0.4
+  #  minMatchCharLength: 0
+  #  keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: Archive
+      url: /archives
+      weight: 5
+    - identifier: Search
+      url: /search/
+      weight: 10
     - identifier: categories
-      name: categories
+      name: Categories
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+    #- identifier: example
+    #  name: example.org
+    #  url: https://example.org
+    #  weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
@@ -132,3 +141,26 @@ menu:
 #         guessSyntax: true
 #         lineNos: true
 #         style: monokai
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
