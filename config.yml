@@ -74,12 +74,12 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: email
+      url: "martin.le@tu-braunschweig.de"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/le-martin/"
+    - name: gitlab
+      url: "https://gitlab.com/le-martin/"
 
   analytics:
     google:
